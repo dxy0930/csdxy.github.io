@@ -10,7 +10,7 @@
     
     
     
-    <title>测试博客 | Dxy之家</title>
+    <title>碎片的通讯 | Dxy之家</title>
     <link href="https://dxy0930.github.io" rel="prefetch" />
 
     
@@ -156,13 +156,13 @@
         <i class="fa fa-home"></i>
         <a href="https://dxy0930.github.io">Dxy之家</a>
         >
-        <span>测试博客</span>
+        <span>碎片的通讯</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2020/04/11/s/">测试博客</a>
+                <a href="/2020/04/11/SuiPian/">碎片的通讯</a>
             </h1>
         </div>
         <div class="tag-article">
@@ -178,7 +178,7 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2020/04/11/s/">测试博客</a>
+                    <a href="/2020/04/11/SuiPian/">碎片的通讯</a>
                 </h4>
             </div>
             <p>
@@ -191,9 +191,12 @@
         </center>
     </div>
     <div class="content-article">
-        <p>这里是主题<br>##主题1</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hello world</span><br></pre></td></tr></table></figure>
-<p>##主题2</p>
+        <h2 id="碎片与活动间的通讯"><a href="#碎片与活动间的通讯" class="headerlink" title="碎片与活动间的通讯"></a>碎片与活动间的通讯</h2><h3 id="活动获得碎片实例"><a href="#活动获得碎片实例" class="headerlink" title="活动获得碎片实例"></a>活动获得碎片实例</h3><p>碎片与活动之间的通信可以使用FragmentManager提供的类似findViewById()的方法。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RightFragment rightFragment = (RightFragment) getSupportFragmentManager().findFragmentById(R.id.right_fragment);</span><br></pre></td></tr></table></figure>
+<p>通过以上语句可以获得一个相应碎片实例，然后便可以通过实例来调用碎片的相关方法。</p>
+<h3 id="碎片获得活动的实例"><a href="#碎片获得活动的实例" class="headerlink" title="碎片获得活动的实例"></a>碎片获得活动的实例</h3><p>碎片可以通过getActivity()得到活动实例</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MainActivity activity = (MainActivity) getActivity();</span><br></pre></td></tr></table></figure>
+<p>##碎片与碎片之间的通讯<br>可以通过碎片-活动-碎片的过程进行通讯。</p>
 
     </div>
 </article>
@@ -255,13 +258,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2020/04/11/s/">测试博客</a>
+                    <a href="/2020/04/13/SuiPianLife/">体验碎片的活动周期部分代码</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2020/04/11/hello-world/">Hello World</a>
+                    <a href="/2020/04/11/SuiPian/">碎片的通讯</a>
                 </span>
             </li>
             
@@ -283,13 +286,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2020/04/11/s/">测试博客</a>
+                    <a href="/2020/04/11/SuiPian/">碎片的通讯</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2020/04/11/hello-world/">Hello World</a>
+                    <a href="/2020/04/13/SuiPianLife/">体验碎片的活动周期部分代码</a>
                 </span>
             </li>
             
@@ -304,7 +307,7 @@
 
                 
                 <li>
-                    <a href="/2020/04/11/s/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2020/04/11/SuiPian/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
@@ -328,7 +331,7 @@
     </div>
     <footer id="gal-footer">
     <div class="container">
-        Copyright © 2018 Dxy Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+        Copyright © 2020 Dxy Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
     </div>
 </footer>
 
