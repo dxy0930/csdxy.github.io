@@ -2,59 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dxy0930.github.io/2020/10/23/Acm2020%E6%96%B0%E7%94%9F%E8%B5%9B7/</loc>
+    
+    <lastmod>2020-10-23</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dxy0930.github.io/2020/10/23/Acm2020%E6%96%B0%E7%94%9F%E8%B5%9B1/</loc>
     
-    <lastmod>2020-10-23T14:06:53.905Z</lastmod>
+    <lastmod>2020-10-23</lastmod>
     
   </url>
   
   <url>
     <loc>https://dxy0930.github.io/categories/index.html</loc>
     
-    <lastmod>2020-04-13T01:19:04.126Z</lastmod>
+    <lastmod>2020-04-13</lastmod>
     
   </url>
   
   <url>
     <loc>https://dxy0930.github.io/about/index.html</loc>
     
-    <lastmod>2020-04-13T01:18:06.392Z</lastmod>
+    <lastmod>2020-04-13</lastmod>
     
   </url>
   
   <url>
     <loc>https://dxy0930.github.io/tags/index.html</loc>
     
-    <lastmod>2020-04-13T01:17:17.940Z</lastmod>
+    <lastmod>2020-04-13</lastmod>
     
   </url>
   
   <url>
     <loc>https://dxy0930.github.io/2020/04/13/SuiPianLife/</loc>
     
-    <lastmod>2020-04-13T00:56:23.692Z</lastmod>
+    <lastmod>2020-04-13</lastmod>
     
   </url>
   
   <url>
     <loc>https://dxy0930.github.io/2020/04/11/SuiPian/</loc>
     
-    <lastmod>2020-04-13T00:38:27.934Z</lastmod>
+    <lastmod>2020-04-13</lastmod>
     
   </url>
   
   <url>
     <loc>https://dxy0930.github.io/404/index.html</loc>
     
-    <lastmod>2020-04-12T07:50:09.755Z</lastmod>
+    <lastmod>2020-04-12</lastmod>
     
   </url>
   
   <url>
     <loc>https://dxy0930.github.io/search/index.html</loc>
     
-    <lastmod>2020-04-12T07:49:56.638Z</lastmod>
+    <lastmod>2020-04-12</lastmod>
     
   </url>
+  
+
+  <url>
+    <loc>https://dxy0930.github.io/</loc>
+    <lastmod>2020-10-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+
   
 </urlset>

@@ -1,20 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Dxy之家</title>
+  <title>Medivh之家</title>
   
   
-  <link href="/atom.xml" rel="self"/>
+  <link href="https://dxy0930.github.io/atom.xml" rel="self"/>
   
   <link href="https://dxy0930.github.io/"/>
-  <updated>2020-10-23T14:06:53.905Z</updated>
+  <updated>2020-10-23T14:19:01.324Z</updated>
   <id>https://dxy0930.github.io/</id>
   
   <author>
-    <name>Dxy</name>
+    <name>Medivh</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>新生赛第7题</title>
+    <link href="https://dxy0930.github.io/2020/10/23/Acm2020%E6%96%B0%E7%94%9F%E8%B5%9B7/"/>
+    <id>https://dxy0930.github.io/2020/10/23/Acm2020%E6%96%B0%E7%94%9F%E8%B5%9B7/</id>
+    <published>2020-10-23T14:19:01.323Z</published>
+    <updated>2020-10-23T14:19:01.324Z</updated>
+    
+    <content type="html"><![CDATA[<p>##dl的会长</p><p>##Description</p><p>众所周知,会长是协会权力最大的dl了,为了新生能有更好的参赛体验（其实是为了毒瘤新生）,他决定利用他的权力对其他出题人的题目难度进行修改,但其他出题人cbb(最毒瘤)当然会不服气，所以会长决定用金钱收买他们，会长可以花1元使任何一道题目的难度增加1或者减少1 (每道题可以操作任意次),现在他想使得所有题目难度一致，问他最少要花费多少钱。</p><p>##Input<br>四个整数a ,b,c,d ,分别代表现有的四个题目的难度(0 \leq a,b,c,d \leq 1000,000,0000≤a,b,c,d≤1000,000,000)。</p><p>##Output<br>会长使这四个题难度一致的最小花费。</p><p>##代码</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include&lt;iostream&gt;</span></span><br><span class="line"><span class="comment">#include &lt;algorithm&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line">int <span class="function"><span class="title">main</span></span>() &#123;</span><br><span class="line">    long long a[4];</span><br><span class="line">    <span class="keyword">for</span> (int i = 0; i &lt; 4; ++i) &#123;</span><br><span class="line">        cin&gt;&gt;a[i];</span><br><span class="line">    &#125;</span><br><span class="line">    sort(a,a+4);</span><br><span class="line">    long long res = a[1]-a[0] + a[2] - a[1] + a[3] - a[1];</span><br><span class="line">    cout&lt;&lt;<span class="string">res;</span></span><br><span class="line"><span class="string">    return 0;</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure><p>##题解<br>从小到大排序后，中位数的点即为到其他各点距离之和最小的点。<br>证明略（建议百度）</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;##dl的会长&lt;/p&gt;
+&lt;p&gt;##Description&lt;/p&gt;
+&lt;p&gt;众所周知,会长是协会权力最大的dl了,为了新生能有更好的参赛体验（其实是为了毒瘤新生）,他决定利用他的权力对其他出题人的题目难度进行修改,但其他出题人cbb(最毒瘤)当然会不服气，所以会长决定用金钱收买</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>新生赛第1题</title>
@@ -25,15 +47,13 @@
     
     <content type="html"><![CDATA[<p>#Description<br>zw是集训队19级里的神之一。他有个习惯就是点外卖吃，他说这并不是因为懒得去食堂，是因为这样能省下时间来刷题，或许这就是神吧。但神也有神的烦恼，他的外卖总是被人拿走，如果找不回来的话就只能吃难吃的面包了。</p><p>万幸的是热心的qc帮他找到了他的外卖，zw非常开心。顺手把眼前的题目秒了。他有点累了，需要休息一会。但眼前又有了新的问题，qc十分崇拜作为神的zw，想让zw帮qc算算他什么时候能脱单。zw告诉了你计算的方法，如果qc现在离寝室距离为奇数他就能脱单，否则不能，你能算出qc到底能不能脱单吗</p><p>#Input<br>输入一个整数a代表距离(1≤a≤1000,000,000)</p><p>#Output<br>输出YES或NO（注意大小写）<br>#代码</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">#include&lt;iostream&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line">int <span class="function"><span class="title">main</span></span>() &#123;</span><br><span class="line">    unsigned long long a;</span><br><span class="line">    cin&gt;&gt;a;</span><br><span class="line">    bool isOdd = a%2;</span><br><span class="line">    <span class="keyword">if</span> (isOdd)&#123;</span><br><span class="line">        cout&lt;&lt;<span class="string">"YES"</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        cout&lt;&lt;<span class="string">"NO"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>#题解<br>判断奇偶即可</p>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;p&gt;#Description&lt;br&gt;zw是集训队19级里的神之一。他有个习惯就是点外卖吃，他说这并不是因为懒得去食堂，是因为这样能省下时间来刷题，或许这就是神吧。但神也有神的烦恼，他的外卖总是被人拿走，如果找不回来的话就只能吃难吃的面包了。&lt;/p&gt;
-&lt;p&gt;万幸的是热心的qc帮他
+    <summary type="html">&lt;p&gt;#Description&lt;br&gt;zw是集训队19级里的神之一。他有个习惯就是点外卖吃，他说这并不是因为懒得去食堂，是因为这样能省下时间来刷题，或许这就是神吧。但神也有神的烦恼，他的外卖总是被人拿走，如果找不回来的话就只能吃难吃的面包了。&lt;/p&gt;
+&lt;p&gt;万幸的是热心的qc帮他</summary>
       
     
-    </summary>
     
     
     
@@ -48,14 +68,12 @@
     
     <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line">public class RightFragment extends Fragment &#123;</span><br><span class="line"></span><br><span class="line">    public static final String TAG = <span class="string">"RightFragment"</span>;</span><br><span class="line">    @Override</span><br><span class="line">    public void onAttach(Context context) &#123;</span><br><span class="line">        super.onAttach(context);</span><br><span class="line">        Log.d(TAG, <span class="string">"onAttach"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void onCreate(@Nullable Bundle savedInstanceState) &#123;</span><br><span class="line">        super.onCreate(savedInstanceState);</span><br><span class="line">        Log.d(TAG, <span class="string">"onCreate"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Nullable</span><br><span class="line">    @Override</span><br><span class="line">    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) &#123;</span><br><span class="line">        View view = inflater.inflate(R.layout.right_fragment,container,<span class="literal">false</span>);</span><br><span class="line">        Log.d(TAG, <span class="string">"onCreateView"</span>);</span><br><span class="line">        <span class="built_in">return</span> view;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void onActivityCreated(@Nullable Bundle savedInstanceState) &#123;</span><br><span class="line">        super.onActivityCreated(savedInstanceState);</span><br><span class="line">        Log.d(TAG, <span class="string">"onActivityCreated"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void <span class="function"><span class="title">onStart</span></span>() &#123;</span><br><span class="line">        super.onStart();</span><br><span class="line">        Log.d(TAG, <span class="string">"onStart"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void <span class="function"><span class="title">onResume</span></span>() &#123;</span><br><span class="line">        super.onResume();</span><br><span class="line">        Log.d(TAG, <span class="string">"onResume"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void <span class="function"><span class="title">onPause</span></span>() &#123;</span><br><span class="line">        super.onPause();</span><br><span class="line">        Log.d(TAG, <span class="string">"onPause"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void <span class="function"><span class="title">onStop</span></span>() &#123;</span><br><span class="line">        super.onStop();</span><br><span class="line">        Log.d(TAG, <span class="string">"onStop"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void <span class="function"><span class="title">onDestroyView</span></span>() &#123;</span><br><span class="line">        super.onDestroyView();</span><br><span class="line">        Log.d(TAG, <span class="string">"onDestroyView"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void <span class="function"><span class="title">onDestroy</span></span>() &#123;</span><br><span class="line">        super.onDestroy();</span><br><span class="line">        Log.d(TAG, <span class="string">"onDestroy"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void <span class="function"><span class="title">onDetach</span></span>() &#123;</span><br><span class="line">        super.onDetach();</span><br><span class="line">        Log.d(TAG, <span class="string">"onDetach"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=
+    <summary type="html">&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=</summary>
       
     
-    </summary>
     
     
     
@@ -70,14 +88,12 @@
     
     <content type="html"><![CDATA[<h2 id="碎片与活动间的通讯"><a href="#碎片与活动间的通讯" class="headerlink" title="碎片与活动间的通讯"></a>碎片与活动间的通讯</h2><h3 id="活动获得碎片实例"><a href="#活动获得碎片实例" class="headerlink" title="活动获得碎片实例"></a>活动获得碎片实例</h3><p>碎片与活动之间的通信可以使用FragmentManager提供的类似findViewById()的方法。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RightFragment rightFragment = (RightFragment) getSupportFragmentManager().findFragmentById(R.id.right_fragment);</span><br></pre></td></tr></table></figure><p>通过以上语句可以获得一个相应碎片实例，然后便可以通过实例来调用碎片的相关方法。</p><h3 id="碎片获得活动的实例"><a href="#碎片获得活动的实例" class="headerlink" title="碎片获得活动的实例"></a>碎片获得活动的实例</h3><p>碎片可以通过getActivity()得到活动实例</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MainActivity activity = (MainActivity) getActivity();</span><br></pre></td></tr></table></figure><p>##碎片与碎片之间的通讯<br>可以通过碎片-活动-碎片的过程进行通讯。</p>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;h2 id=&quot;碎片与活动间的通讯&quot;&gt;&lt;a href=&quot;#碎片与活动间的通讯&quot; class=&quot;headerlink&quot; title=&quot;碎片与活动间的通讯&quot;&gt;&lt;/a&gt;碎片与活动间的通讯&lt;/h2&gt;&lt;h3 id=&quot;活动获得碎片实例&quot;&gt;&lt;a href=&quot;#活动获得碎片实例&quot; class=&quot;
+    <summary type="html">&lt;h2 id=&quot;碎片与活动间的通讯&quot;&gt;&lt;a href=&quot;#碎片与活动间的通讯&quot; class=&quot;headerlink&quot; title=&quot;碎片与活动间的通讯&quot;&gt;&lt;/a&gt;碎片与活动间的通讯&lt;/h2&gt;&lt;h3 id=&quot;活动获得碎片实例&quot;&gt;&lt;a href=&quot;#活动获得碎片实例&quot; class=&quot;</summary>
       
     
-    </summary>
     
     
     
