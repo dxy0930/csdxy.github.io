@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dxy0930.github.io/"/>
-  <updated>2020-04-13T00:56:23.692Z</updated>
+  <updated>2020-10-23T14:06:53.905Z</updated>
   <id>https://dxy0930.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>新生赛第1题</title>
+    <link href="https://dxy0930.github.io/2020/10/23/Acm2020%E6%96%B0%E7%94%9F%E8%B5%9B1/"/>
+    <id>https://dxy0930.github.io/2020/10/23/Acm2020%E6%96%B0%E7%94%9F%E8%B5%9B1/</id>
+    <published>2020-10-23T13:56:59.653Z</published>
+    <updated>2020-10-23T14:06:53.905Z</updated>
+    
+    <content type="html"><![CDATA[<p>#Description<br>zw是集训队19级里的神之一。他有个习惯就是点外卖吃，他说这并不是因为懒得去食堂，是因为这样能省下时间来刷题，或许这就是神吧。但神也有神的烦恼，他的外卖总是被人拿走，如果找不回来的话就只能吃难吃的面包了。</p><p>万幸的是热心的qc帮他找到了他的外卖，zw非常开心。顺手把眼前的题目秒了。他有点累了，需要休息一会。但眼前又有了新的问题，qc十分崇拜作为神的zw，想让zw帮qc算算他什么时候能脱单。zw告诉了你计算的方法，如果qc现在离寝室距离为奇数他就能脱单，否则不能，你能算出qc到底能不能脱单吗</p><p>#Input<br>输入一个整数a代表距离(1≤a≤1000,000,000)</p><p>#Output<br>输出YES或NO（注意大小写）<br>#代码</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">#include&lt;iostream&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line">int <span class="function"><span class="title">main</span></span>() &#123;</span><br><span class="line">    unsigned long long a;</span><br><span class="line">    cin&gt;&gt;a;</span><br><span class="line">    bool isOdd = a%2;</span><br><span class="line">    <span class="keyword">if</span> (isOdd)&#123;</span><br><span class="line">        cout&lt;&lt;<span class="string">"YES"</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        cout&lt;&lt;<span class="string">"NO"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>#题解<br>判断奇偶即可</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#Description&lt;br&gt;zw是集训队19级里的神之一。他有个习惯就是点外卖吃，他说这并不是因为懒得去食堂，是因为这样能省下时间来刷题，或许这就是神吧。但神也有神的烦恼，他的外卖总是被人拿走，如果找不回来的话就只能吃难吃的面包了。&lt;/p&gt;
+&lt;p&gt;万幸的是热心的qc帮他
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>体验碎片的活动周期部分代码</title>
